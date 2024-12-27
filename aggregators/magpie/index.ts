@@ -93,8 +93,18 @@ const fetch = async (timestamp: number, _: ChainBlocks, {chain}: FetchOptions): 
           runAtCurrTime: true,
           start: 1662595200,
         },
+        [CHAIN.SONIC]: {
+          fetch: fetch,
+          runAtCurrTime: true,
+          start: 1735217146,
+        },
+        [CHAIN.ZKSYNC]: {
+          fetch: fetch,
+          runAtCurrTime: true,
+          start: 1662595200,
+        },
       },
-      isExpensiveAdapter: true,
+      // isExpensiveAdapter: true,
     };
 
 export default adapter;

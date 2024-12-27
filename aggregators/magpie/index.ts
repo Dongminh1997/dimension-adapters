@@ -94,7 +94,7 @@ const fetch = async (timestamp: number, _: ChainBlocks, {chain}: FetchOptions): 
           start: 1662595200,
         },
       },
-      isExpensiveAdapter: true,
+      // isExpensiveAdapter: true,
     };
 
 export default adapter;
